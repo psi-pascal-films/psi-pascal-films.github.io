@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSI - A Film About Struggle</title>
+    
+    <!-- REAL BRUSH SCRIPT FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Allura:wght@400&family=Courier+Prime:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- VINTAGE FILM EFFECT CONTAINER -->
+    <div class="film-wrapper">
+        <div class='film'>
+            <div class="effect">
+                <div class="grain"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">PSI</h1>
+            <ul class="nav-links">
+                <li><a href="#poster">POSTER</a></li>
+                <li><a href="#trailer">TRAILER</a></li>
+                <li><a href="#summary">STORY</a></li>
+                <li><a href="#facts">FACTS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION - FIXED BACKGROUND WITH MOSAIC BLUR REVEAL -->
+    <section class="hero-section" id="heroSection">
+        <div class="hero-inner">
+            <img src="hero-image.jpg" alt="PSI" class="hero-img" id="heroImg">
+            <canvas id="mosaicCanvas" class="mosaic-canvas"></canvas>
+            <div class="hero-text-overlay">
+                <h1 class="hero-title">PSI</h1>
+                <p class="hero-desc">A FILM ABOUT STRUGGLE</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCROLL TRIGGER - INVISIBLE MARKER TO MEASURE PROGRESS -->
+    <div class="scroll-trigger" id="scrollTrigger"></div>
+
+    <!-- MAIN CONTENT - TRANSPARENT BACKGROUND OVER HERO -->
+    <div class="main-content" id="mainContent">
+        <!-- Poster -->
+        <section id="poster" class="content-wrapper">
+            <div class="vintage-card">
+                <h2 class="vintage-heading">THE POSTER</h2>
+                <div class="poster-container">
+                    <div class="poster-spotlight" id="posterSpotlight"></div>
+                    <img src="poster.jpg" alt="PSI Poster" class="poster-image" id="posterImg">
+                </div>
+                <p class="vintage-text">
+                    A visual representation of chaos, suffering, and the interconnected pain within families facing poverty in the Philippines.
+                </p>
+            </div>
+        </section>
+
+        <!-- Trailer -->
+        <section id="trailer" class="content-wrapper">
+            <div class="vintage-card">
+                <h2 class="vintage-heading">WATCH THE TRAILER</h2>
+                <div class="video-box">
+                    <iframe 
+                        width="100%" 
+                        height="500" 
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary -->
+        <section id="summary" class="content-wrapper">
+            <div class="vintage-card">
+                <h2 class="vintage-heading">ABOUT THE FILM</h2>
+                
+                <p class="vintage-text">
+                    PSI is a raw, unflinching examination of poverty in the Philippines. Through the lens of a struggling family, the film explores the interconnected systems of oppression—poverty, corruption, broken family dynamics, and misused power—that create a seemingly inescapable cycle of suffering.
+                </p>
+
+                <p class="vintage-text">
+                    Like a "basang baril" (loaded but neglected weapon), these systemic failures are dangerous not because they shout, but because they are ignored until irreversible damage is done.
+                </p>
+
+                <div class="themes-section">
+                    <div class="theme-vintage" data-aos="fade-up">
+                        <h3>FAMILY POVERTY</h3>
+                        <p>The structural inability of households to meet basic needs, perpetuating cycles across generations.</p>
+                    </div>
+                    <div class="theme-vintage" data-aos="fade-up" data-aos-delay="100">
+                        <h3>FAMILY DYNAMICS</h3>
+                        <p>How economic stress and trauma shape relationships, creating environments marked by conflict and neglect.</p>
+                    </div>
+                    <div class="theme-vintage" data-aos="fade-up" data-aos-delay="200">
+                        <h3>CORRUPTION</h3>
+                        <p>The systemic betrayal of public trust that disproportionately harms the most vulnerable.</p>
+                    </div>
+                    <div class="theme-vintage" data-aos="fade-up" data-aos-delay="300">
+                        <h3>MISUSED POWER</h3>
+                        <p>Authority exercised without accountability, silencing and controlling those who cannot resist.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facts -->
+        <section id="facts" class="content-wrapper">
+            <div class="vintage-card">
+                <h2 class="vintage-heading">BEHIND THE SCENES</h2>
+                
+                <div class="facts-vintage">
+                    <div class="fact-vintage" data-aos="fade-right">
+                        <span class="fact-number">01</span>
+                        <div>
+                            <h4>RESEARCH-DRIVEN</h4>
+                            <p>Extensive research into family poverty, corruption, and systemic failures to ensure authenticity.</p>
+                        </div>
+                    </div>
+
+                    <div class="fact-vintage" data-aos="fade-right" data-aos-delay="100">
+                        <span class="fact-number">02</span>
+                        <div>
+                            <h4>LOCAL COLLABORATION</h4>
+                            <p>Partnered with Filipino communities to authentically represent their stories and voices.</p>
+                        </div>
+                    </div>
+
+                    <div class="fact-vintage" data-aos="fade-right" data-aos-delay="200">
+                        <span class="fact-number">03</span>
+                        <div>
+                            <h4>SYMBOLIC STORYTELLING</h4>
+                            <p>The title "PSI" carries multiple meanings—pressure and the symbol of struggle.</p>
+                        </div>
+                    </div>
+
+                    <div class="fact-vintage" data-aos="fade-right" data-aos-delay="300">
+                        <span class="fact-number">04</span>
+                        <div>
+                            <h4>CINEMATIC REALISM</h4>
+                            <p>Shot on location in impoverished communities capturing the unvarnished reality of struggle.</p>
+                        </div>
+                    </div>
+
+                    <div class="fact-vintage" data-aos="fade-right" data-aos-delay="400">
+                        <span class="fact-number">05</span>
+                        <div>
+                            <h4>AWARD RECOGNITION</h4>
+                            <p>Premiered at international film festivals with recognition for unflinching social commentary.</p>
+                        </div>
+                    </div>
+
+                    <div class="fact-vintage" data-aos="fade-right" data-aos-delay="500">
+                        <span class="fact-number">06</span>
+                        <div>
+                            <h4>SOCIAL IMPACT</h4>
+                            <p>A portion of proceeds support advocacy organizations working toward systemic change.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="vintage-footer">
+            <p>PSI - A FILM ABOUT STRUGGLE</p>
+            <p>&copy; 2026. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
